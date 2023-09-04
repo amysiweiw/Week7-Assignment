@@ -10,6 +10,7 @@
 # Week8-Assignment updated  
 - Used raycast interaction replaced the UI action.
 - Last version the canvas will be activated via OnTriggerEnter, which the active zone is actually a box collider zone.
+
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
 
