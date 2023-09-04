@@ -9,7 +9,7 @@
 
 # Week8-Assignment updated  
 - Used raycast interaction replaced the UI action.
-- Last version the canvas will be activated via OnTriggerEnter, which the active zone is actually a box collider zone.
+- Last version the canvas will be activated via OnTriggerEnter, which the active zone is actually a box collider zone. Now it's updated into the following scripts on player:
 
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
@@ -25,3 +25,5 @@
         {
             canvas.SetActive(false);
         }
+
+  - So the interaction now is updated as the canvas will pop up when player facing and getting close to a distance of the planet(TrackingObject). This change not only provides a more comfortable visual experience but also aligns with user experience. Additionally, compared to the method of setting up a box collider on each planet, it will also save more development time.
